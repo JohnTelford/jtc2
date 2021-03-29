@@ -9,12 +9,17 @@ module.exports = {
     author: '@chrisbiscardi',
       menuLinks:[
         {
-          name : 'home',
+          name : 'Home',
           link : '/'
         },
 
         {
-          name : 'about',
+          name : 'Summary',
+          link : '/summary'
+        },
+
+        {
+          name : 'About',
           link : '/about'
         },
       ]

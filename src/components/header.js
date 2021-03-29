@@ -5,13 +5,13 @@ import React from 'react'
 const Header = ({ siteTitle, menuLinks }) => (
   <header
     style={{
-      background: 'green',
+      background: 'blue',
       marginBottom: '1.45rem',
     }}
   >
     <div
       style={{
-        background: "green",
+        background: "blue",
         marginBottom: "1.45rem",
       }}
     >
