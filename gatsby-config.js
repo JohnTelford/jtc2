@@ -14,8 +14,8 @@ module.exports = {
         },
 
         {
-          name : 'Summary',
-          link : '/summary'
+          name : 'Technology',
+          link : '/technology'
         },
 
         {
