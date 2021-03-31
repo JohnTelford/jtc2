@@ -1,0 +1,102 @@
+<!-- Import TbfUF from ‘/../images/TbfUF.png’ -->
+
+
+# Development Stack Components
+
+***
+
+
+
+
+The development stack uses application components to create, deploy, and manage web sites. Below are descriptions of an effective development stack components descriptions 
+
+
+## [Visual Studio Code](https://code.visualstudio.com/)
+
+
+Developers using  Visual Studio Code  as   Central Command and Control   enables  developing, managing,  controlling, and deploying web sites. VScode, is a lightweight open source code editor that runs on local development computers,  and is available for Linux, macOS, and Windows. It may be the best text editor in years
+
+There are a wealth of easily install extension to customize VScode look and feel. Several color themes, programming language specific intelligence code completion, snippets, color coding, error checking, spelling, and many more are available.
+
+
+## [Git](https://git-scm.com/)
+
+`Git`  source control is built-in to VScode. 
+
+Git  is a key development stack  component. It is a distributed version control system designed to track project file changes.  Its attributes are using a local file repository, speed, data integrity, and support for distributed, non-linear workflows and keeping track of file changes among multiple developers. `Git`is responsible for everything GitHub-related that happens on  local development computers. The developer pushes changes in the local file repository to GitHub for safe keeping and sharing with other project developers.
+
+
+## [GitHub](https://github.com/)
+
+*GitHub*  is an online web hosted repository for git projects. It is a platform for hosting  versions of project files in a remote repository that is a unified source of truth.  It helps software teams collaborate and maintain the entire history of  projects file changes. Developers can view history of changes and go back to a previous version. It helps answer the questions *who changed what, where, when, and why?*
+
+A local copy of the project *GitHub* repository is stored on the local development computer. `Git` is responsible for everything GitHub-related  on the local development computer. `Git` is used to stage edited local project developer while editing, shows how the edit will be displayed on the web, requires  the *why* message before committing changes to the GitHub project repository,  communicate with GigHub and commit staged file  from the local development computer repository the remote GitHub repo.
+
+<!--
+<img src={TbfUF.png} />
+-->
+
+## [Netlify](https://www.netlify.com)
+
+Netlify  is a popular Application Delivery Network (ADN). It provides continuous web deployment. When Netlify is notified of a commit to a shared GitHub repository that has been configured, or by the Netlify CLI Command [#]_ program running on the local development computer, Netlify builds the web sites from the shared repository and deploys the  web worldwide to every major cloud provider. Netlify can deploy previews of web sites before pushing them to  live site.
+
+***
+
+# Using the development Stack
+
+
+
+## Editing
+
+
+Gatsby is the top framework component for building this site. Development time is spent editing source code files. The VScode MDX Extension dramatically speeds up development  supports MDX features:
+
+- Syntax highlighting quickly detects  errors while typing or building, and may give hints about problems
+
+- Frequent snippets of code can be quickly inserted
+
+- Section builder provides a quick way for setting section header levels
+
+- Live preview compiles source code being edited  showing how the file will be displayed on the web
+
+***
+
+## Deploy
+
+[Netlify](https://www.netlify.com) 
+
+### Viewing the state of the entire web site on the web helps
+
+- Deploying web site draft preview:
+
+	 - Compile MDX source files 
+
+		- `gatsby delete`
+		- `gtsby build`
+
+	- Deploy web site draft preview 
+
+		- `netlify deploy`
+
+	- View draft web site
+
+		- Click on the Website Draft  URL
+
+- Deploy production when draft is good.
+
+### Deploying a web site production version is similar:
+
+- Deploying web site production
+
+	- Compile MDX source source files
+	
+	   - `gatsby delete`
+		 - `gatsby build`
+	
+	- Deploy production web site
+	
+    `netlify deploy --prod`
+
+- Click on the Website URL
+
+***
