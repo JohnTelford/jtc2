@@ -1,81 +1,73 @@
-# Web Components Overview
+import ReactComponents from '../images/ReactComponents.png'
+import webComponents from '../images/webComponents.png'
+import mdxLogo from '../images/mdxLogo.png'
+import reactLogo from '../images/reactLogo.png'
+import gatsbyLogo from '../images/gatsbyLogo.png'
 
 
-## Way Back When
+# Web Component Technology
 
-Way back when Internet web browsers and programming languages came along, I became interested in web technologies, and began learn by doing.
-
-Creating a web page with the first version  of HTML and see it render by a web browser was exciting and straightforward. It required  learning a new programming language, figuring out what HTML syntax means, and figure out how the web page would look. Being able to style HTML with CSS was exciting. There were rough spots, when vendors changed the languages and browser supporting them.
-
-It was an exciting event when web pages containing JavaScript happened. It added the capability for dynamic behavior after the web browser  loaded the page.
-
-From way back when to present day, the troika of HTML, CSS, and JavaScript has become standard web programming languages that are interpreted and rendered by most web browsers
-
-I am enthusiastic about contemporary Web Component Technology. It helps mitigate some of the down sides of adding functionality and maintenance of web sites built with other technologies.
-
-## Frameworks
-
-Web development frameworks are web site generators abstracting other technologies, helping make developing web sites faster and more robust. The output of site generators are deployed to vendor cloud-based web services, eliminating the need for local web servers. The result is browsers rendering web pages by executing web standard HTML, CSS, and JavaScript instructions,
-
-## Components and Templates
-
-> View [Pete Hunt: React: Rethinking best practices - JSConf EU](https://www.youtube.com/watch?v=x7cQ3mrcKaY) software engineering presentation for the concepts of component and templates technologies, and the differences.
-
-Many web sites today are built with web development frameworks.There are a  gaggle of them to choose from. Most use templates, and some newer ones use components.
-
-The cost of maintaining web site projects may be a magnitude or more than the development costs. The two software engineering principles  that determine development and maintenance  cost are coupling and cohesion
-
-Coupling is:
-> "The degree to which each program module relies on each of the other modules." More the coupling the more difficult it is to make fixes or add functionality. Coupling software increases maintenance costs.
-
-Cohesion is:
-> "The degree to which elements of a module belong together." This is the single responsible software engineering principle that decrease maintenance costs.
-
-## Templates
-
-> Templates encourage a poor separation of concerns because they separate technologies, and requiring separate markup and logic programming files. 
-
-> A framework cannot know how to separate concerns. It needs to provide powerful and expressive tools for the web developer to do it correctly.
-
-Most of the template frameworks I have learned by doing have coupling problems when adding functionality or mitigating  software defects.
+*Web development technology for the component era*
 
 ***
 
-## Components
+Web Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation.
 
-This web site is a result of learn by doing deep dives into web component technology. Adding functionality and maintenance is less difficult than template frameworks
+Web components are a set of web platform APIs that enables creating new custom, reusable, encapsulated HTML tags to use in web pages and web apps. Custom components and widgets build on the Web Component standards, will work across modern browsers, and can be used with any JavaScript library or framework that works with HTML.
 
-Cobbling a component technology web site using a component frameworks is different from template frameworks. React is a core component technology. React says this about Gatsby:
-
-> "Gatsby is the best way to create static websites with React. It lets you use React components, but outputs pre-rendered HTML and CSS to guarantee the fastest load time"
-
-### JSX
-
-The core development technology of Gatsby and React is JavaScript. React has created JSX, a syntax extension to JavaScript. Browsers do not understand JSX. React created a compiler to transform JSX code into standard web programming language at build time.
-
-> JSX (JavaScript XML), is a React syntax extension to the JavaScript language. It is similar to a template language, but it has full power of JavaScript. It is similar in appearance to HTML, JSX provides a way to structure component rendering using syntax familiar to many developers. React components are written using JSX. 
+Web components are based on existing web standards. They enable web developers to extend HTML with new elements with encapsulated styling and custom behavior.
 
 
-> React embraces the fact that rendering logic is inherently coupled with other UI logic: how events are handled, how the state changes over time, and how the data is prepared for display.
+## React
 
-> Instead of artificially separating technologies by putting markup and logic in separate files, React separates concerns with cohesive components that contain both.
+<img height={100} src={reactLogo} />
 
-### MDX
+> "React is for building user interfaces (UIs). It is an open-source, front end, JavaScript library created by Facebook.
 
-I'm hesitant creating web site content without using a version of Markdown. My preference is using MDX.
 
-MDX is Markdown for the component era. It enables writing JSX directly in Markdown documents. This enables writing  content containing components.
+> React is a declarative, efficient, and flexible JavaScript library. It enables creating complex UIs from small and isolated pieces of code called “components”.
 
-#### Markdown
+>  React code is made of entities called components. Components can be rendered to a particular element. A component is the core building block of a React application. Every component resides in the same space, but works independently from one another and merges all them in a parent component, which is the final UI of the application."
 
-Markdown is a faster way of creating and maintaining web site content. It is a HTLM abstraction and that is compiled to web standard HTML
 
-John Gruber published the original Markdown Syntax Guide. Different flavors of Markdown have evolved since then.
+## React JSX
 
-> "Markdown is a better way to write HTML. It is compiled into HTML at deploy time. Markdown is a lightweight plaintext markup language used to add formatting elements to documents. Markdown is now one of the world’s popular markup languages. Using Markdown is different from using a WYSIWYG editor. In an application like Microsoft Word, you click buttons to format words and phrases, and the changes are visible immediately. Markdown is not like that. In a Markdown-formatted file. Markdown syntax is added to the text to indicate which words and phrases look different."
+<img height={150} src={webComponents} />
 
-Markdown has been characterized by an informal specification and a reference implementation for conversion to HTML. Over time, many Markdown implementations have appeared. They are driven by the need for additional features like tables, footnotes, definition lists, and HTML inside Markdown blocks. The behavior of additional features diverge from the reference implementation and informal specification, and have attracted attention. Not all flavors of Markdown are compatible or supported by all frameworks.
+> "JSX (JavaScript XML), is a React syntax extension to the JavaScript language. It is similar to a template language, but it has full power of JavaScript. It is similar in appearance to HTML, JSX provides a way to structure component rendering using syntax familiar to many developers. React components are written using JSX"
+ 
 
-MDX is Markdown for the component era. It enables writing JSX directly in Markdown documents. This enables writing  content containing components like tables, footnotes, and writing your own components without creating another Markdown implementation. 
 
-***
+## MDX
+
+<img height={60} src={mdxLogo} /> 
+
+>  "MDX is markdown for the component era. It enables seamlessly writing JSX in Markdown documents. It is compiled to JSX components, It enables using markdown’s terse syntax (such as # heading) and JSX for more advanced components.
+
+>  ❤️ Powerful: MDX blends markdown and JSX syntax to fit perfectly in React/JSX-based projects.
+
+>  💻 Everything is a component: Use existing components inside MDX file and import other MDX files as plain components.
+
+>  🔧 Customizable: Decide which component is rendered for each markdown element.
+
+>  📚 Markdown-based: The simplicity and elegance of markdown remains, JSX is interleaved when you want to.
+
+>  🔥 Blazingly blazing fast: MDX has no runtime, all compilation occurs during the build stage."
+
+## Gatsby Development Environment
+
+<img height={72} src={gatsbyLogo} />
+
+> "When working with Gatsby.js, the built-in command line interface (CLI) is used. This essential tool allows do things like creating new projects from starters, launching a dev server with hot-reloading, and generating production builds.
+
+> The Gatsby CLI tool lets you quickly create new Gatsby-powered sites and run commands for developing Gatsby sites. It is a published npm package. The Gatsby CLI is available via npm and should be installed globally by running: npm install -g gatsby-cli"
+
+### Gatsby - MDX
+> "MDX is Markdown for the component era enabling writing JSX embedded inside Markdown. This combination allows using Markdown’s terse syntax (such as # Heading) for content and JSX for more advanced or reusable components."
+
+ > "Before MDX, some of the benefits of writing Markdown were lost when integrating with Javascript. Implementations were template string-based which required lots of escaping and cumbersome syntax.
+
+> MDX makes writing with Markdown and JSX simpler while being more expressive. Writing is fun again when you combine components, that can even be dynamic or load data, with the simplicity of Markdown for long-form content."
+
+### Creating Dynamic Navigation in Gatsby 
+> "At times you will want to be able to edit your website’s navigation in response to a change in requirements. To achieve this, you can use Gatsby to dynamically generate your navigation. "
