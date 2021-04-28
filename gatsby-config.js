@@ -15,7 +15,7 @@ module.exports = {
 
         {
           name : 'Technology',
-          link : '/compwebtechpagesch',
+          link : '/compwebtechpages',
         },
 
         {
