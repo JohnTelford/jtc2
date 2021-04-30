@@ -5,29 +5,30 @@ import diffGitGithub from '../images/diffGitGithub.png'
 
 ***
 
-The development stack uses application components to create, deploy, and manage web sites. Below are descriptions of an effective development stack components descriptions that are used build and maintains this web site.
+The development stack uses web software components to create, deploy, and manage web sites. Below are descriptions of an effective development stack components descriptions that are used build and maintains this web site.
 
 
 ## Visual Studio Code
 
 
-Developers using  Visual Studio Code  as   Central Command and Control   enables  developing, managing,  controlling, and deploying web sites. `VScode`, is a lightweight open source code editor that runs on local development computers,  and is available for Linux, macOS, and Windows. It may be the best text editor in years
+Developers using  [Visual Studio Code](https://code.visualstudio.com/)  as   Central Command and Control   enables  developing, managing, and deploying web sites. `VScode`, is a lightweight open source code editor that runs on local development computers,  and is available for Linux, macOS, and Windows. It may be the best text editor in years
 
-There are a wealth of extension to customize `VScode` look and feel. Several color themes, programming language specific intelligence code completion, snippets, color coding, error checking, spelling, and many more are available.
+There are a wealth of [extensions Visual Studio Code](https://marketplace.visualstudio.com) to customize `VScode` look and feel. Several color themes, programming language specific intelligence code completion, snippets, color coding, error checking, spelling, and many more are available.
 
+## Distributed Version Control System
 
-## Git
+### Git
 
-`Git`  source control is built-in to `VScode`. 
+[Git](https://git-scm.com/)  source control is built-in to `VScode`. 
 
 `Git`  is a key development stack  component. It is a distributed version control system designed to track project file changes.  Its attributes are using a local file repository, speed, data integrity, and support for distributed, non-linear workflows and keeping track of file changes among multiple developers. `Git`is responsible for everything `GitHub`-related that happens on  local development computers. The developer pushes changes stored in the local file repository to `GitHub` for safe keeping and sharing with other project developers.
 
 
-## GitHub
+### GitHub
 
-`GitHub`  is an online web hosted repository for `git` projects. It is a platform for hosting  versions of project files in a remote repository that is a unified source of truth.  It helps software teams collaborate and maintain the entire history of  projects file changes. Developers can view history of changes and go back to a previous version. It helps answer the questions *who changed what, where, when, and why?*
+[GitHub](https://github.com/)  is an online web hosted repository for `git` projects. It is a platform for hosting  versions of project files in a remote repository that is a unified source of truth.  It helps software teams collaborate and maintain the entire history of  projects file changes. Developers can view history of changes and go back to a previous version. It helps answer the questions *who changed what, where, when, and why?*
 
-A local copy of the project `GitHub` repository is stored on the local development computer. `Git` is responsible for everything `GitHub`-related  on the local development computer. `Git` is used to stage edited local project developer while editing, and requires  the *why* message before committing changes to the `GitHub` project repository,  communicate with `GigHub` and commit staged file  from the local development computer repository the remote `GitHub` repository.
+A local copy of the project `GitHub` repository is stored on development computers. `Git` is responsible for everything `GitHub`-related  on local development computers. `Git` is used to locally stage edited project files. Developers are required to write a *why* message before committing changes to the `GitHub` project repository.
 
 <img src={diffGitGithub} />
 
@@ -35,10 +36,13 @@ A local copy of the project `GitHub` repository is stored on the local developme
 # Using the development Stack
 
 
-
 ## VScode
 
-`Vscode` is the command and control framework  for building web component for this web site. Development time is spent editing source code files. The `VScode` `MDX` Extension dramatically speeds up development.  Some `MDX` features are:
+`Vscode` is the command and control framework  for building web component web site. Development time is spent editing and managing source code files. 
+
+[Git](https://git-scm.com/) is a key development stack  source control component. It is built-in to `VScode`.
+
+The `VScode` `MDX` Extension dramatically speeds up development.  Some `MDX` features are:
 
 - Syntax highlighting quickly detects  errors while typing or building, and may give hints about problems
 
@@ -48,14 +52,24 @@ A local copy of the project `GitHub` repository is stored on the local developme
 
 - Live preview compiles source code being edited  showing how the file will be displayed on the web
 
+
 ***
+
+## Gatsby
+
+
+> [Gatsby](https://www.gatsbyjs.com/) is the best way to create static websites with React. It lets you use React components, but outputs pre-rendered HTML and CSS to guarantee the fastest load time.  ...React
+
+Gatsby  is a web site generator based on abstracting React and Node component frameworks creating fast websites.
+
+Gatsby plugin components and React components are chosen for  building a web app structure, and then are  welded together with JSX and MDX. 
+
+The Gatsby ``build`` command produces a directory of static web standard HTML, CSS, and JavaScript files that is deployed to a vendor cloud-based  web services. 
+
 
 
 ## Netlify
 
-`Netlify`  is a popular Application Delivery Network (ADN). It provides continuous web deployment. When `Netlify` is notified of a commit initiated by `VScode` to a shared `GitHub` repository, or by the `Netlify CLI` command program running on development computers, `Netlify` builds the web sites and deploys  it worldwide to every major cloud provider. Developers instruct `Netlify` to deploy previews of web sites  project enabling stake holders to view the project web site before it goes live.
-
-
-[Netlify](https://www.netlify.com) 
+[Netlify](https://www.netlify.com/)  is a popular Application Delivery Network (ADN). It provides continuous web deployment. When `Netlify` is notified of a commit initiated by `VScode` to a shared `GitHub` repository, or by the `Netlify CLI` command program running on development computers, `Netlify` builds the web site and deploys  it worldwide to every major cloud provider. Developers instruct `Netlify` to deploy previews of the web site  enabling stake holders to view the state of the project on a preview web site, before deploying to the production web site.
 
 ***
