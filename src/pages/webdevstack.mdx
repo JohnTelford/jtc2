@@ -5,18 +5,73 @@ import webdevstack from '../images/webdevstack.png'
 
 ***
 
-The Web Development Stack uses local  and web-based services   to create, deploy, and manage web sites. Below are descriptions of an effective development stack components descriptions that are used build and maintains this web site.
+Web site development is not easy. It is difficult, time consuming, and expensive. Optimizing the web development environment is critical.
+
+Developing web software using local development workstations and software is advantageous. The development environment is not locked into cloud vendor services. It can be updated with new and improved hardware and software quicker than relying on cloud vendor service to update
 
 ## Overview
 
 <img height={600} src={webdevstack}/>
 
-## Visual Studio Code
+ *This overview diagram depicts the web development stack used to build and deploy this web site*
+
+### Brief Synopsis
+
+- VSvode text editor is used to create, edit, and store web site source files in the Local GitHub Repository.
+
+- Gatsby reads source files from the Local GitHub Repository and creates a live preview local Development web site. Any source file edits updates the live preview.
+
+- Git commits the Local GitHub Repository file changes to the remote GitHub Repository.
+
+- Gatsby builds a web site image ready to deploy to the Internet.
+
+- Netlify deploys the web site image to the Internet
+
+
+
+
+## Web Development Stack
+
+The web development stack uses local  and web-based services   to create, deploy, and manage web sites. It abstracts other technologies, help making developing web sites faster, more robust, and cost less. 
+
+Versions of edited web project files are stored locally and in a remote repository. The web site is deployed to the Internet using vendor cloud-based web services, eliminating the need for local web services. 
+
+User web  browsers render web pages by interrupting web standard HTML, CSS, and JavaScript instructions generated using the web development stack.
+
+### Visual Studio Code
 
 
 Developers using  [Visual Studio Code](https://code.visualstudio.com/)  as   Central Command and Control   enables  developing, managing, and deploying web sites. `VScode`, is a lightweight open source code editor that runs on local development computers,  and is available for Linux, macOS, and Windows. It may be the best text editor in years
 
 There are a wealth of [extensions Visual Studio Code](https://marketplace.visualstudio.com) to customize `VScode` look and feel. Several color themes, programming language specific intelligence code completion, snippets, color coding, error checking, spelling, and many more are available.
+
+### Text Editor
+
+### Command Shell
+
+### Git command
+
+### VScode
+
+`Vscode` is the command and control framework  for building web component web site. Development time is spent editing and managing source code files. 
+
+[Git](https://git-scm.com/) is a key development stack  source control component. It is built-in to `VScode`.
+
+The `VScode` `MDX` Extension dramatically speeds up development.  Some `MDX` features are:
+
+- Syntax highlighting quickly detects  errors while typing or building, and may give hints about problems
+
+- Frequent snippets of code can be quickly inserted
+
+- Section builder provides a quick way for setting section header levels
+
+- Live preview compiles source code being edited  showing how the file will be displayed on the web
+
+
+
+### Command Shell
+
+
 
 ## Distributed Version Control System
 
@@ -36,26 +91,6 @@ A local copy of the project `GitHub` repository is stored on development compute
 <img src={diffGitGithub} />
 
 
-# Using the development Stack
-
-
-## VScode
-
-`Vscode` is the command and control framework  for building web component web site. Development time is spent editing and managing source code files. 
-
-[Git](https://git-scm.com/) is a key development stack  source control component. It is built-in to `VScode`.
-
-The `VScode` `MDX` Extension dramatically speeds up development.  Some `MDX` features are:
-
-- Syntax highlighting quickly detects  errors while typing or building, and may give hints about problems
-
-- Frequent snippets of code can be quickly inserted
-
-- Section builder provides a quick way for setting section header levels
-
-- Live preview compiles source code being edited  showing how the file will be displayed on the web
-
-
 ***
 
 ## Gatsby
@@ -70,6 +105,7 @@ Gatsby plugin components and React components are chosen for  building a web app
 The Gatsby ``build`` command produces a directory of static web standard [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/HTML), and [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) files that is deployed to a vendor cloud-based  web services. 
 
 
+***
 
 ## Netlify
 
