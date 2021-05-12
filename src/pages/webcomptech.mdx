@@ -34,15 +34,36 @@ Web components are based on existing web standards. They enable web developers t
 
 <img height={150} src={webComponents} />
 
-> " [JSX](https://reactjs.org/docs/introducing-jsx.html#gatsby-focus-wrapper) (JavaScript XML), is a React syntax extension to the [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) language. It is similar to a template language, but it has full power of JavaScript. It is similar in appearance to [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML), JSX provides a way to structure component rendering using syntax familiar to many developers. React components are written using JSX"
  
 
+The core development technology of Gatsby and React is [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript). React has created JSX, a syntax extension to JavaScript.  JSX is not part of the web programming languages troika. Browsers do not understand JSX. React created a compiler to transform JSX code into standard web programming language at build time.
 
-## MDX
+> JSX (JavaScript XML), is a React syntax extension to the JavaScript language. It is similar to a template language, but it has full power of JavaScript. It is similar in appearance to [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML), JSX provides a way to structure component rendering using syntax familiar to many developers. React components are written using JSX. 
+
+
+> React embraces the fact that rendering logic is inherently coupled with other UI logic: how events are handled, how the state changes over time, and how the data is prepared for display.
+
+> Instead of artificially separating technologies by putting markup and logic in separate files, React separates concerns with cohesive components that contain both.
+
+### Markdown
+
+Markdown is a faster way of creating and maintaining web site content. It is a HTLM abstraction  that is compiled to web standard [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+
+John Gruber published the original Markdown Syntax Guide. Different flavors of Markdown have evolved since then.
+
+> "Markdown is a better way to write HTML. It is compiled into HTML at deploy time. Markdown is a lightweight plaintext markup language used to add formatting elements to documents. Markdown is now one of the world’s popular markup languages. Using Markdown is different from using a WYSIWYG editor. In an application like Microsoft Word, you click buttons to format words and phrases, and the changes are visible immediately. Markdown is not like that. In a Markdown-formatted file. Markdown syntax is added to the text to indicate which words and phrases look different."
+
+Markdown has been characterized by an informal specification and a reference implementation for conversion to HTML. Over time, many Markdown implementations have appeared. They are driven by the need for additional features like tables, footnotes, definition lists, and HTML inside Markdown blocks. The behavior of additional features diverge from the reference implementation and informal specification, and have attracted attention. Not all flavors of Markdown are compatible or supported by all frameworks.
+
+### MDX
 
 <img height={60} src={mdxLogo} /> 
 
->  " [MDX](https://mdxjs.com/) is markdown for the component era. It enables seamlessly writing JSX in Markdown documents. It is compiled to JSX components, It enables using markdown’s terse syntax (such as # heading) and JSX for more advanced components.
+I'm hesitant creating web site content without using a version of Markdown. My preference is using MDX.
+
+MDX is Markdown for the component era. It enables writing JSX directly in Markdown documents. This enables writing  content containing components like tables, footnotes, and writing your own components without creating another Markdown implementation. 
+
+
 
 >  ❤️ Powerful: MDX blends markdown and JSX syntax to fit perfectly in React/JSX-based projects.
 

@@ -12,16 +12,9 @@ It was an exciting event when web pages containing [JavaScript](https://develope
 From way back when to present day, the troika of [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), and [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) has become standard web programming languages that are interpreted and rendered by most web browsers
 
 I am enthusiastic about contemporary Web Component Technology. It helps mitigate some of the costs  when adding functionality and maintenance, compared to web sites built with other technologies.
-
-## Web Development Stack
-
-[Web Development Stack](webdevstack) are web site generators abstracting other technologies, helping make developing web sites faster and more robust. The output of site generators are deployed to vendor cloud-based web services, eliminating the need for local web servers. The result is browsers rendering web pages by executing web standard [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), and [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) instructions,
-
 ## Components and Templates
 
 > View [Pete Hunt: React: Rethinking best practices - JSConf EU](https://www.youtube.com/watch?v=x7cQ3mrcKaY) software engineering presentation for the concepts of component and templates technologies, and the differences.
-
-Many web sites today are built with web development frameworks.There are a  gaggle of them to choose from. Most use templates, and some newer ones use components.
 
 The cost of maintaining web site projects may be a magnitude or more than the development costs. The two software engineering principles  that determine development and maintenance  cost are coupling and cohesion
 
@@ -33,9 +26,11 @@ Cohesion is:
 
 ## Templates
 
-Templates encourage a poor separation of concerns because they separate technologies, and requiring separate markup and logic programming files. 
+Many web sites today are built with template web development frameworks.There are a  gaggle of them to choose from. 
 
-A framework cannot know how to separate concerns. It needs to provide powerful and expressive tools for the web developer to do it correctly.
+Templates web development frameworks encourage a poor separation of concerns because they separate technologies, and requiring separate markup and logic programming files. 
+
+A template framework cannot know how to separate concerns. It needs to provide powerful and expressive tools for the web developer to do it correctly.
 
 Most of the template frameworks I have learned by doing have coupling problems when adding functionality or mitigating  software defects.
 
@@ -52,7 +47,12 @@ Cobbling a component technology web site using a component frameworks is differe
 
 > "Gatsby is the best way to create static websites with React. It lets you use React components, but outputs pre-rendered [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) and [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) to guarantee the fastest load time"
 
-### JSX
+
+## Web Development Stack
+
+A [Web Development Stack](webdevstack) is  a component web site generators abstracting other technologies, helping make developing web sites faster and more robust. The output of site generators are deployed to vendor cloud-based web services, eliminating the need for local web servers. The result is browsers rendering web pages by executing web standard [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS), and [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) instructions,
+
+## JSX
 
 The core development technology of Gatsby and React is [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript). React has created JSX, a syntax extension to JavaScript.  JSX is not part of the web programming languages troika. Browsers do not understand JSX. React created a compiler to transform JSX code into standard web programming language at build time.
 
@@ -63,7 +63,7 @@ The core development technology of Gatsby and React is [JavaScript](https://deve
 
 > Instead of artificially separating technologies by putting markup and logic in separate files, React separates concerns with cohesive components that contain both.
 
-### Markdown
+## Markdown
 
 Markdown is a faster way of creating and maintaining web site content. It is a HTLM abstraction and that is compiled to web standard [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 
@@ -73,7 +73,7 @@ John Gruber published the original Markdown Syntax Guide. Different flavors of M
 
 Markdown has been characterized by an informal specification and a reference implementation for conversion to HTML. Over time, many Markdown implementations have appeared. They are driven by the need for additional features like tables, footnotes, definition lists, and HTML inside Markdown blocks. The behavior of additional features diverge from the reference implementation and informal specification, and have attracted attention. Not all flavors of Markdown are compatible or supported by all frameworks.
 
-### MDX
+## MDX
 
 I'm hesitant creating web site content without using a version of Markdown. My preference is using MDX.
 
