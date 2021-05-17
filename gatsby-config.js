@@ -10,17 +10,17 @@ module.exports = {
       menuLinks:[
         {
           name : 'Home',
-          link : '/'
+          link : '/',
         },
 
         {
           name : 'Technology',
-          link : '/technology'
+          link : '/compwebtechpages',
         },
 
         {
           name : 'About',
-          link : '/about'
+          link : '/about',
         },
       ]
   },

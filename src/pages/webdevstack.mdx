@@ -1,0 +1,114 @@
+import diffGitGithub from '../images/diffGitGithub.png'
+import webdevstack from '../images/webdevstack.png'
+
+# Web Development Stack
+
+***
+
+Web site development is not easy. It is difficult, time consuming, and expensive. Optimizing the web development environment is critical.
+
+Developing web software using local development workstations and software is advantageous. The development environment is not locked into cloud vendor services. It can be updated with new and improved hardware and software quicker than relying on cloud vendor service to update
+
+## Overview
+
+<img height={600} src={webdevstack}/>
+
+ *This overview diagram depicts the web development stack used to build and deploy this web site*
+
+### Brief Synopsis
+
+- VSvode text editor is used to create, edit, and store web site source files in the Local GitHub Repository.
+
+- Gatsby reads source files from the Local GitHub Repository and creates a live preview local Development web site. Any source file edits updates the live preview.
+
+- Git commits the Local GitHub Repository file changes to the remote GitHub Repository.
+
+- Gatsby builds a web site image ready to deploy to the Internet.
+
+- Netlify deploys the web site image to the Internet
+
+
+
+
+## Web Development Stack
+
+The web development stack uses local  and web-based services   to create, deploy, and manage web sites. It abstracts other technologies, help making developing web sites faster, more robust, and cost less. 
+
+Versions of edited web project files are stored locally and in a remote repository. The web site is deployed to the Internet using vendor cloud-based web services, eliminating the need for local web services. 
+
+User web  browsers render web pages by interrupting web standard HTML, CSS, and JavaScript instructions generated using the web development stack.
+
+### Visual Studio Code
+
+
+Developers using  [Visual Studio Code](https://code.visualstudio.com/)  as   Central Command and Control   enables  developing, managing, and deploying web sites. `VScode`, is a lightweight open source code editor that runs on local development computers,  and is available for Linux, macOS, and Windows. It may be the best text editor in years
+
+There are a wealth of [extensions Visual Studio Code](https://marketplace.visualstudio.com) to customize `VScode` look and feel. Several color themes, programming language specific intelligence code completion, snippets, color coding, error checking, spelling, and many more are available.
+
+### Text Editor
+
+### Command Shell
+
+### Git command
+
+### VScode
+
+`Vscode` is the command and control framework  for building web component web site. Development time is spent editing and managing source code files. 
+
+[Git](https://git-scm.com/) is a key development stack  source control component. It is built-in to `VScode`.
+
+The `VScode` `MDX` Extension dramatically speeds up development.  Some `MDX` features are:
+
+- Syntax highlighting quickly detects  errors while typing or building, and may give hints about problems
+
+- Frequent snippets of code can be quickly inserted
+
+- Section builder provides a quick way for setting section header levels
+
+- Live preview compiles source code being edited  showing how the file will be displayed on the web
+
+
+
+### Command Shell
+
+
+
+## Distributed Version Control System
+
+### Git
+
+[Git](https://git-scm.com/)  source control is built-in to `VScode`. 
+
+`Git`  is a key development stack  component. It is a distributed version control system designed to track project file changes.  Its attributes are using a local file repository, speed, data integrity, and support for distributed, non-linear workflows and keeping track of file changes among multiple developers. `Git`is responsible for everything `GitHub`-related that happens on  local development computers. The developer pushes changes stored in the local file repository to `GitHub` for safe keeping and sharing with other project developers.
+
+
+### GitHub
+
+[GitHub](https://github.com/)  is an online web hosted repository for `git` projects. It is a platform for hosting  versions of project files in a remote repository that is a unified source of truth.  It helps software teams collaborate and maintain the entire history of  projects file changes. Developers can view history of changes and go back to a previous version. It helps answer the questions *who changed what, where, when, and why?*
+
+A local copy of the project `GitHub` repository is stored on development computers. `Git` is responsible for everything `GitHub`-related  on local development computers. `Git` is used to locally stage edited project files. Developers are required to write a *why* message before committing changes to the `GitHub` project repository.
+
+<img src={diffGitGithub} />
+
+
+***
+
+## Gatsby
+
+
+> [Gatsby](https://www.gatsbyjs.com/) is the best way to create static websites with React. It lets you use React components, but outputs pre-rendered [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) and [CSS](https://developer.mozilla.org/en-US/docs/Web/HTML) to guarantee the fastest load time.  ...React
+
+Gatsby  is a web site generator based on abstracting React and Node component frameworks creating fast websites.
+
+Gatsby plugin components and React components are chosen for  building a web app structure, and then are  welded together with JSX and MDX. 
+
+The Gatsby ``build`` command produces a directory of static web standard [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML), [CSS](https://developer.mozilla.org/en-US/docs/Web/HTML), and [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) files that is deployed to a vendor cloud-based  web services. 
+
+
+***
+
+## Netlify
+
+[Netlify](https://www.netlify.com/)  is a popular Application Delivery Network (ADN). It provides continuous web deployment. When `Netlify` is notified of a commit initiated by `VScode` to a shared `GitHub` repository, or by the `Netlify CLI` command program running on development computers, `Netlify` builds the web site and deploys  it worldwide to every major cloud provider. Developers instruct `Netlify` to deploy previews of the web site  enabling stake holders to view the state of the project on a preview web site, before deploying to the production web site.
+
+***

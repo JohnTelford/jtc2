@@ -39,13 +39,15 @@ const Header = ({ siteTitle, menuLinks }) => (
         
         <div>
           <nav>
-            <ul style={{ display: "flex", flex: 1 }}>
-              {menuLinks.map(link => (
+            <ul>
+            {/* <ul style={{ display: "flex", flex: 1 }}> */}
+            {/* <ul style={{ display: "flex"}}> */}
+            {menuLinks.map(link => (
                 <li
                   key={link.name}
                   style={{
                     listStyleType: `none`,
-                    padding: `1rem`,
+                    // padding: `1rem`,
                   }}
                 >
                   <Link style={{ color: `white` }} to={link.link}>
